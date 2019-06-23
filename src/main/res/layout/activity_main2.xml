@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:background="@color/yellow_col">
+
+        <TextView
+            android:text="About AndroidCam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30sp"
+            android:background="@color/newblack"
+            android:textColor="@color/abtcol1" />
+
+        <TextView
+            android:text="\nAndroidCam is a easy to use application that can be used in a high security enclosed region. This application can be installed on android devices, and just by the click of a button surveillance can be started. Other users who have logged into the application with same username and password will be able to get notifications from the monitoring device.Logs button is used to get access to all the old images from server."
+            android:layout_width="match_parent"
+            android:layout_height="343dp"
+            android:id="@+id/textView13"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="22sp"
+            android:background="@color/yellow_col"
+            android:textColor="@color/lbl_name"
+            android:scrollbars="vertical"
+            android:isScrollContainer="true"
+            android:layout_weight="0.56" />
+
+        <TextView
+            android:text="Creators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView20"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@color/newblack"
+            android:textSize="30sp"
+            android:textColor="@color/abtcol1" />
+
+        <TextView
+            android:text="\nNishanth Raj\nShreyas S Chiplunkar\nSudhakar P Jadhav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView22"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="20sp"
+            android:textColor="@color/lbl_name"
+            android:background="@color/yellow_col"
+            android:layout_weight="0.35" />
+
+        <TextView
+            android:text="Computer Science Engineering, SirMVIT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            android:textSize="18sp"
+            android:background="@color/abtcol1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_login_bg"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Logs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="@color/bg_login" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Lgview"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:maxLines = "35"
+        android:autoLink="web"
+        android:scrollbars="vertical"
+        android:background="@color/green_1"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:fadeScrollbars="true"
+        android:textColor="@color/input_login" />
+
+</LinearLayout>

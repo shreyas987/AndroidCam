@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@color/blueee">
+
+    <TextView
+        android:text="@string/welcome_to_androidcam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@color/newblack"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_blueee"
+        android:textStyle="bold|italic"
+        android:paddingLeft="35dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:textSize="26sp" />
+
+    <Button
+        android:text="@string/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogout"
+        android:backgroundTint="@color/newblack"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:text="About"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnabt"
+        android:background="@color/newblack"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:text="@string/start_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnstrt"
+        android:background="@color/newblack"
+        android:backgroundTint="@color/newblack"
+        android:textColor="@color/blueee"
+        android:elevation="0dp"
+        android:linksClickable="false"
+        android:elegantTextHeight="true"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/btnabt"
+        android:layout_alignEnd="@+id/btnabt"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <ToggleButton
+        android:text="latest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlg"
+        android:layout_marginTop="45dp"
+        android:id="@+id/tglbtn"
+        android:layout_alignLeft="@+id/btnlg"
+        android:layout_alignStart="@+id/btnlg"
+        android:checked="true"
+        android:textOn="Hide"
+        android:textOff="Last Intrusion"
+        android:layout_alignRight="@+id/btnlg"
+        android:layout_alignEnd="@+id/btnlg"
+        android:background="@color/newblack"
+        android:textColor="@color/blueee" />
+
+    <TextView
+        android:text=" Click to access all intrusions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="16sp"
+        android:textColor="@color/newblack"
+        android:layout_alignBaseline="@+id/btnlg"
+        android:layout_alignBottom="@+id/btnlg"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:text=" Click to start monitoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="@color/newblack"
+        android:layout_alignBaseline="@+id/btnstrt"
+        android:layout_alignBottom="@+id/btnstrt"
+        android:layout_toRightOf="@+id/btnabt"
+        android:layout_toEndOf="@+id/btnabt"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="Last Captured Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tglbtn"
+        android:layout_alignLeft="@+id/tglbtn"
+        android:layout_alignStart="@+id/tglbtn"
+        android:layout_marginTop="22dp"
+        android:id="@+id/latsttxt"
+        android:layout_alignRight="@+id/btnLogout"
+        android:layout_alignEnd="@+id/btnLogout"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Helping You Keep Your surrounding safe:)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:text="@string/logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/btnlg"
+        android:backgroundTint="@color/newblack"
+        android:textColor="@color/blueee"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/btnstrt"
+        android:layout_alignLeft="@+id/btnstrt"
+        android:layout_alignStart="@+id/btnstrt"
+        android:layout_alignRight="@+id/btnstrt"
+        android:layout_alignEnd="@+id/btnstrt" />
+
+</RelativeLayout>
